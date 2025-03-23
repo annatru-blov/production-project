@@ -1,5 +1,9 @@
-import "./counter.scss";
+import * as styles from "./Counter.module.scss";
 
 export default function Counter() {
-  return <button>Counter</button>;
+  return (
+    <div className={styles.btn}>
+      <button>Counter</button>
+    </div>
+  );
 }

@@ -3,18 +3,17 @@ import { buildLoaders } from "./buildLoaders";
 import { buildResolvers } from "./buildResolvers";
 import { buildPlugins } from "./buildPlugins";
 import { buildDevServer } from "./buildDevServer";
-import path from "path";
 import { BuildOptions } from "./types/config";
 
 export function buildWebpackConfig(
   options: BuildOptions
 ): webpack.Configuration {
-  const { mode, paths, isDev, port } = options;
+  const { mode, paths, isDev } = options;
   return {
     mode,
     entry: paths.entry,
     module: {
-      rules: buildLoaders(),
+      rules: buildLoaders(options),
     },
     resolve: buildResolvers(),
     output: {
