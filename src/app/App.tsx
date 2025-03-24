@@ -1,17 +1,17 @@
 import { Link, Route, Routes } from "react-router-dom";
 import "./styles/index.scss";
-import { lazy, Suspense, useContext, useState } from "react";
-import { Theme, ThemeContext } from "./themes/ThemeContext";
-import { useTheme } from "./themes/useTheme";
+import { lazy, Suspense } from "react";
+import { classNames } from "shared/lib/classNames/classNames";
+import { useTheme } from "./provider/ThemeProvider";
 
-const AboutPageLazy = lazy(() => import("./pages/AboutPage/AboutPage"));
-const MainPageLazy = lazy(() => import("./pages/MainPage/MainPage"));
+const AboutPageLazy = lazy(() => import("pages/AboutPage/ui/AboutPage"));
+const MainPageLazy = lazy(() => import("pages/MainPage/ui/MainPage"));
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames("app", {}, [theme])}>
       <button onClick={toggleTheme}>Темная тема</button>
       <Link to={"/"}>Главная</Link>
       <Link to={"/about"}>О сайте</Link>
