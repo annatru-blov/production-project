@@ -16,12 +16,14 @@
     "@types/webpack": "^5.28.5",
     "@types/webpack-dev-server": "^4.7.1",
     "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
     "imports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.2",
     "sass": "^1.86.0",
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
+    "svg-inline-loader": "^0.8.2",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
@@ -30,6 +32,7 @@
     "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "@types/react-router-dom": "^5.3.3",
