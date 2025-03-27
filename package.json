@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@types/node": "^22.13.11",
     "@types/webpack": "^5.28.5",
     "@types/webpack-dev-server": "^4.7.1",
@@ -20,6 +21,7 @@
     "html-webpack-plugin": "^5.6.3",
     "imports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.2",
+    "react-refresh": "^0.16.0",
     "sass": "^1.86.0",
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
@@ -36,8 +38,13 @@
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "@types/react-router-dom": "^5.3.3",
+    "i18n": "^0.15.1",
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-http-backend": "^3.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
     "react-router-dom": "^7.4.0",
     "typescript-plugin-css-modules": "^5.1.0"
   }
